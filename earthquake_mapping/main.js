@@ -19,9 +19,9 @@ function preload() {
 		this.lon = 0;
 		this.lat = 0;
 		this.zoom = 1;
-		this.windowWidth = min(windowWidth, 1280);
-		this.windowHeight = min(windowHeight, 1280);
-		this.canvasSize = String(this.windowWidth) + "x" + String(this.windowHeight);
+		this.cutoffwidth = min(windowWidth, 1280);
+		this.cutoffheight = min(windowHeight, 1280);
+		this.canvasSize = String(this.cutoffwidth) + "x" + String(this.cutoffheight);
 		return String(this.lon+","+this.lat+","+this.zoom+"/"+this.canvasSize)
 	}
 	var specificString = specifics();
