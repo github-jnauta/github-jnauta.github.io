@@ -5,4 +5,4 @@ Adapt ```index.html``` in order to execute the desired program which should be l
 
 # To do list:
 ==============
-* generate file which can `automatically' adapt the ```index.html``` file to execute the desired programs
+* generate file which can 'automatically' adapt the ```index.html``` file to execute the desired programs
