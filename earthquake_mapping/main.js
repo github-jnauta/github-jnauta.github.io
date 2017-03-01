@@ -41,7 +41,7 @@ function preload() {
 	mapImg = loadImage(mapImg_call);
 
 	//Load earthquakes
-	earthquake_csv = loadStrings("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv");
+	earthquake_csv = loadStrings("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv");
 }
 
 
@@ -79,9 +79,4 @@ function getAPI_data(data) {
 
 function draw() {
 	noLoop();
-
-	// for (var i = 0; earthquakes.length; i++) {
-	// 	print(earthquakes[i]);
-	// }
-
 }
