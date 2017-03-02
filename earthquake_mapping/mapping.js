@@ -42,7 +42,7 @@ function mapping(lon, lat, mapwidth, mapheight, zoom, magn) {
 		var rad_lat = radians(this.lat);
 		// print(rad_lon, rad_lat);
 
-		//Use Mercator map equations to get x,y
+		//Use Web Mercator map equations to get x,y
 		function mercator_map(lon, lat, mapwidth, zoom) {
 			var zoomConst = mapwidth / pow(2, zoom+1);
 			var prefix = (zoomConst / PI) * pow(2, zoom);

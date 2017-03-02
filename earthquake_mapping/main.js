@@ -87,8 +87,10 @@ function mouseDragged() {
 		var oldMousePos = [mouseX, mouseY];
 	}
 	loop();
-	mousePos = [mouseX, mouseY];
-	ellipse(mousePos[0], mousePos[1], 10, 10);
+	mousePos = new Mouse(mouseX, mouseY, width, height, zoom);
+	print(mouseX, mouseY);
+	print(mousePos.coord2lonlat(mouseX,mouseY));
+	
 }
 
 //Stop looping when mouse is not pressed
